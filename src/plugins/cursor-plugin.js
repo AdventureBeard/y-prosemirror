@@ -39,7 +39,7 @@ export const createDecorations = (state, awareness, createCursor) => {
     return DecorationSet.create(state.doc, [])
   }
   awareness.getStates().forEach((aw, clientId) => {
-    if (clientId === y.clientID) {
+    if (clientId === awareness.clientID) {
       return
     }
     if (aw.cursor != null) {
